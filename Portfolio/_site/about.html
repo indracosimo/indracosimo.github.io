@@ -1,0 +1,112 @@
+<!-- <!doctype html> -->
+<!-- <html> -->
+  <!-- <head> -->
+  <!-- <script src="/assets/js/tabs.js"></script> -->
+    <!-- <meta charset="utf-8"> -->
+    <!-- <title>About</title> -->
+	<!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+  <!-- </head> -->
+  <!-- <body> -->
+  <!-- <nav>
+  
+</nav>
+
+
+ -->
+    <!-- <h1 id="about-page">About page</h1>
+
+<p>Love me a good WIP</p>
+ -->
+  <!-- </body> -->
+<!-- </html> -->
+
+<!doctype html>
+<html>
+  <head>
+    <script src="/assets/js/tabs.js"></script>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="indracosimo.github.io" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About | indracosimo.github.io</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="About" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/about.html" />
+<meta property="og:url" content="http://localhost:4000/about.html" />
+<meta property="og:site_name" content="indracosimo.github.io" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"About","url":"http://localhost:4000/about.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav>
+  
+</nav>
+
+
+
+    
+    <h1 id="about-page">About page</h1>
+
+<p>Love me a good WIP</p>
+
+
+    <div id="content">
+      <div class="tabContainer">
+        <ul class="tabs">
+          <li><a href="javascript:void(0);" class="active" onclick="openTab(event, 'tab1')">Portfolio</a></li>
+          <li><a href="javascript:void(0);" onclick="openTab(event, 'tab2')">CV</a></li>
+          <li><a href="javascript:void(0);" onclick="openTab(event, 'tab3')">About</a></li>
+        </ul>
+        <div class="tabContent">
+          <div id="tab1" class="tab-pane active">
+            <span>Put portfolio pieces here, <b>dummy</b>.</span>
+          </div>
+          <div id="tab2" class="tab-pane">
+            <span>How long are you gonna delay updating your CV? <b>Hmm?</b></span>
+          </div>
+          <div id="tab3" class="tab-pane">
+            <span>I guess linkedin and all that. <b>BORING!</b>.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openTab(evt, tabId) 
+	  {
+        let i, tabContent, tabs;
+
+        // Hide tab content to prevent overlap
+        tabContent = document.getElementsByClassName("tab-pane");
+        for (i = 0; i < tabContent.length; i++) 
+		{
+          tabContent[i].style.display = "none";
+        }
+
+        // Removes "active" class from all tabs, otherwise the highlight persists
+        tabs = document.getElementsByClassName("tabs")[0].getElementsByTagName("a");
+        for (i = 0; i < tabs.length; i++) 
+		{
+          tabs[i].classList.remove("active");
+        }
+
+        // Marks highlighted tab as active
+        document.getElementById(tabId).style.display = "block";
+        evt.currentTarget.classList.add("active");
+      }
+
+      // Initialize by showing the first tab
+      document.addEventListener("DOMContentLoaded", function() 
+	  {
+        document.getElementById("tab1").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
