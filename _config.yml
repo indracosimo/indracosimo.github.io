@@ -17,6 +17,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+      
+
+include:
+  - assets/videos/
 
 plugins:
   - jekyll-feed
