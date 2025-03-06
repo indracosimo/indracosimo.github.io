@@ -63,3 +63,8 @@ body {
 .tabs a:hover {
   background: inherit;
   color: #fff; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
