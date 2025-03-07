@@ -9,11 +9,19 @@ html {
 
 body {
   background: url("/assets/images/chain.jpg") no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; } }
 #content {
-  max-width: 50vw; }
+  max-width: 50vw;
+  padding: 10px; }
 
+@media (min-width: 760px) {
+  #content {
+    max-width: 50vw; } }
 .tabContainer {
   background: #333;
   border: .45px solid #555;
@@ -21,9 +29,12 @@ body {
 
 .tabContent {
   display: flex;
-  flex-direction: left;
-  padding: 10px;
-  text-align: left;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: auto;
   min-height: 600px;
   color: #fff; }
 
@@ -44,16 +55,20 @@ body {
   display: flex;
   flex: 1; }
 
+.tabs {
+  flex-wrap: wrap; }
+
 .tabs a {
   position: relative;
   background: #222;
   border-top: 3px solid rgba(0, 0, 0, 0);
-  padding: 1em .5em;
+  padding: 0.8em 0.5em;
+  text-align: center;
   float: left;
   text-decoration: none;
   color: #888;
   margin: 0 .1em 0 0;
-  font-size: 1em;
+  font-size: 0.9em;
   flex: 1;
   transition: all .35s ease; }
 
@@ -66,7 +81,13 @@ body {
   background: inherit;
   color: #fff; }
 
-.container {
+.video-container {
   display: flex;
-  flex-direction: row;
-  align-items: center; }
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%; }
+
+video {
+  max-width: 100%;
+  height: auto; }
