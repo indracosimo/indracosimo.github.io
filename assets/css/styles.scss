@@ -27,12 +27,12 @@ body {
 }
 
 #content {
-  max-width:50vw;
+  max-width: 75vw;
   padding: 10px;
 }
 @media (min-width: 760px){
 	#content{
-	max-width: 50vw;
+	max-width: 75vw;
  }
 }
 .tabContainer {
@@ -103,15 +103,43 @@ flex-wrap: wrap;
 
 //flex settings
 .video-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+    position: relative;
 	width: 100%;
+	max-width: 90%;
+	display: flex;
+	//flex-direction: column;
+	align-items: center;
+	justify-content: 100%;
+	//text-align: center;
+
+}
+
+.responsive-iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 1024px) {
+  .video-container {
+    max-width: 560px;
+  }
 }
 
 video {
 max-width: 100%;
 height: auto;
 }
+
+.responsive-video {
+  max-width: 90%;
+  height: auto; 
+}
+
+@media (min-width: 1024px) {
+  .responsive-video {
+    max-width: 500px;
+  }
+}
+
 //flex settigns
