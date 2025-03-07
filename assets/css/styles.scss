@@ -16,13 +16,18 @@ html
 }
 
 body {
-  background: url('/assets/images/chain.jpg') no-repeat center center fixed;
-  background-size: auto;
+  //background: url('/assets/images/chain.jpg') no-repeat center center fixed;
+  //background-size: auto;
+  //background-attachment: fixed;
+  background: linear-gradient(90deg, rgba(245,146,146,1) 0%, rgba(245,255,176,1) 100%);
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 @media (max-width: 768px) {
   body {
-    background-attachment: fixed; 
+    background-attachment: f; 
   }
 }
 
