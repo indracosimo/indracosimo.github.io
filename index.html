@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--meta http-equiv="X-UA-Compatible" content="ie=edge"-->
     <title>Indra Cosimo Bowen-Paoli</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      .footer
+      {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(34, 32, 32, 0.397);
+        color: white;
+        /* text-align: center; */
+      }
+      .footer-container
+        {
+          max-width: 1200px;
+          margin: 0 auto; 
+          padding: 12px 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer-links
+        {
+          color: white;
+          font-size: 28px;
+          margin: 0 12px;
+          transition: color 0.2s ease;
+        }
+          /* hover is for desktop, active for mobile */
+        .footer-links a:hover{ color: #00bcd4;}
+
+        .footer-links a:active {color: #00bcd4;}
+    </style>
   </head>
 
   <div class="topnav">
@@ -43,7 +76,35 @@
      Breaking a problem down into smaller bite-sized chunks is the best way to code and manage!
   </P>
 </div>
+<footer class="footer">
+  <div class ="footer-container">
+    <div class="footer-columns">
+      <div class="pfp-blurb-left">
+        <figure class="image is-64x64">
+          <img class="is-rounded" src="/assets/images/mask.png">
+        </figure>
+      </div>
+      <div class ="marginless-column">
+        <h5 class="lighter-text">Indra Cosimo Bowen-Paoli</h5>
+        <div class="darker-text">
+          <p>
+            Oh hey, what's goin' on? My name is Indra and I live in Stockholm, Sweden.
+            I am a game programmer however my passion for games lie in design, one of my... 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class ="footer-links">
+      <a rel="noopener noreferrer" href="mailto:indracosimo@gmail.com" target="_blank" title="Gmail"><i class='bx bxl-gmail'></i></a>
+      <!---->
+      <a rel="noopener noreferrer" href="https://www.linkedin.com/in/indra-cosimo-bowen-paoli-a104a71a9/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+      <!---->
+      <a rel="noopener noreferrer" href="https://github.com/indracosimo" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+    </div>
+  </div>
+</footer>
     <!--Footer-->
-
+    <!--contact such as link to github profile, linkedin site, cv download, back to top button, send me an email etc-->
+    <!--footer should contain the about blurb, room for a pfp, links to linkedin and github, aw well as a link to my cv (which should have downloads for that)-->
   </body>
 </html>
