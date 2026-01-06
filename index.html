@@ -2,37 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indra Cosimo Bowen-Paoli</title>
-  <link rel="stylesheet" href="index_style.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indra Cosimo Bowen-Paoli</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
   <!--HEADER-->
-  <header>
-  <ul class="navbar">
-      <li>Indra Cosimo Bowen Paoli</li>
-      <div class="navbar-right">
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#highlights">Highlights</a></li>
-      <li><a href="#about">About</a></li>
-    </div>
-  </ul>
-</header>
+  <nav class="navbar">
+    <section class="section navbar-bar">
+        <div class="container">
+            <h2 class="title">Indra Cosimo Bowen-Paoli</h2>
+            <p class="subtitle"><strong>Game programmer</strong></p>
+        </div>
+    </section>
+    <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="projects.html"><a href="projects.html">Projects</a></li>
+        <!-- <li><a href="#highlights">Highlights</a></li> -->
+        <li><a href="#about">About</a></li> 
+    </ul>
+</nav>
 
   <!--MAIN-->
   <main>
     <!--INTRO-->
     <section id="home">
-      <h1>Hello! My name is Indra Cosimo Bowen-Paoli.</h1>
-      <h3>I'm an Engine Programmer!</h3>
+      <!-- <h1>Hello! My name is Indra Cosimo Bowen-Paoli.</h1>
+      <h3>I'm an Engine Programmer!</h3> -->
     </section>
 
     <!--HIGHLIGHTS-->
     <section id="highlights">
-      <h1>Project Highlights</h1>
       <div class="gallery">
         <div class="row">
           <div class="column">
@@ -51,47 +54,35 @@
       </div>
     </section>
     <!--ABOUT ME-->
-    <section id="about">
-      <p>
-        Oh hey, what's goin' on? My name is Indra and I live in Stockholm, Sweden.<br>
-        I am a game programmer however my passion for games lie in design, one of my favorite aspects of development is
-        discussing what the game is going to be and how design decisions influence each other.<br>
-        When it comes to playing games or discussing projects I feel like I have a good eye for mechanics, game loops
-        that play into each other, and how to make something fun and interesting.<br>
-        Solving problems is something that I really enjoy, even if I don't look like I'm having fun at first!<br>
-        Some of the best experiences of working in a team is the shared feeling of joy once a seemingly impossible task
-        is overcome.<br>
-        My dream is to have my own studio where I can be more of a game director. When it comes to game development and
-        programming, I see myself as a bit of an all-arounder.<br>
-        I think my biggest strength is recognizing the individual strengths of my teammates, as well as the ability to
-        keep everyone on the same page.<br>
-        Breaking a problem down into smaller bite-sized chunks is the best way to code and manage!
-      </p>
-      <!-- <section class="skills">
-        <div class="skills-content">
-          <h2>Education</h2>
-          <ul class="skills-list">
-            <li>Higher Vocational Education, Game Programming (2024-2026)</li>
-          </ul>
-          <h2>Technical Skills</h2>
-          <ul class="skills-list">
-            <li>C#</li>
-            <li>C++</li>
-            <li>Unity</li>
-            <li>Unreal Engine</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Perforce</li>
-          </ul>
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="assets/images/indra.jpg" alt="Profile Picture">
         </div>
-      </section> -->
+        <div class="about-text">
+          <p>
+            Oh hey, what's goin' on? My name is Indra and I live in Stockholm, Sweden.
+            I am a game programmer; however, my passion for games lies in design. One of my favorite aspects of development
+            is discussing what the game is going to be and how design decisions influence each other.
+            When it comes to playing games or discussing projects, I feel like I have a good eye for mechanics, game loops
+            that play into each other, and how to make something fun and interesting.
+            Solving problems is something that I really enjoy, even if I don't look like I'm having fun at first!
+            Some of the best experiences of working in a team are the shared feelings of joy once a seemingly impossible
+            task is overcome.
+            My dream is to have my own studio where I can be more of a game director. When it comes to game development and
+            programming, I see myself as a bit of an all-arounder.
+            I think my biggest strength is recognizing the individual strengths of my teammates, as well as the ability to
+            keep everyone on the same page.
+            Breaking a problem down into smaller bite-sized chunks is the best way to code and manage!
+          </p>
+        </div>
+      </div>
     </section>
   </main>
   <!--FOOTER-->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-columns">
-
         <div class="footer-left">
           <figure class="image is-64x64">
             <img class="is-rounded" src="assets/images/indra58x64.jpg" alt="Profile Picture">
@@ -100,7 +91,7 @@
             <a href="#about" class="footer-blurb-link">
               <p>
                 Oh hey, what's goin' on? My name is Indra and I live in Stockholm, Sweden.
-                I am a game programmer however my passion for games lie in design, one of my...
+                I am a game programmer; however, my passion for games lies in design...
               </p>
             </a>
           </div>
@@ -109,10 +100,9 @@
         <div class="footer-right">
           <h2>Find me on</h2>
           <div class="footer-links">
-            <a href="mailto:indracosimo@gmail.com" target="_blank" title="Gmail"><i class="bx bxl-gmail"></i></a>
-            <a href="https://www.linkedin.com/in/indra-cosimo-bowen-paoli-a104a71a9/" target="_blank"
-              title="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
-            <a href="https://github.com/indracosimo" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="mailto:indracosimo@gmail.com" target="_blank" title="Gmail"><i class="bx bxl-gmail" style="font-size: 2rem;"></i></a>
+            <a href="https://www.linkedin.com/in/indra-cosimo-bowen-paoli-a104a71a9/" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin-square" style="font-size: 2rem;"></i></a>
+            <a href="https://github.com/indracosimo" target="_blank" title="GitHub"><i class="bx bxl-github" style="font-size: 2rem;"></i></a>
           </div>
         </div>
       </div>
