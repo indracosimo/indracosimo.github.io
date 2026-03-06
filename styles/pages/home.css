@@ -1,0 +1,74 @@
+/* Gallery (Home) */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.gallery .row {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.gallery .column img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+/* About section (Home) */
+.about-section {
+  margin: 40px 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Breakpoints */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .gallery .column {
+    flex: 1;
+    margin: 0 0.5em;
+  }
+}

@@ -1,0 +1,68 @@
+/* Base reset */
+* { box-sizing: border-box; }
+
+:root {
+  /* Warm base */
+  --bg: #fbf7f2;        /* warm off-white */
+  --text: #1f2937;      /* dark slate (good contrast on --bg) */
+
+  /* Surfaces */
+  --surface: #ffffff;
+  --surface-2: #fff4e6; /* warm tint */
+  --border: #eadfd3;
+
+  /* Accents (green + orange) */
+  --accent: #1b7a5a;    /* deep green */
+  --accent-2: #c2410c;  /* warm orange */
+
+  /* Links */
+  --link: #1b7a5a;
+  --link-hover: #155e45;
+
+  /* Footer / dark areas */
+  --on-dark: #ffffff;
+  --dark: #1f2a2b;
+
+  /* Shadows */
+  --shadow-1: 0 8px 24px rgba(17, 24, 39, 0.08);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* nice default link styling */
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Consistent content width */
+.container {
+  width: min(1100px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.page {
+  padding-block: 2rem;
+}
+
+/* Simple spacing defaults */
+h1, h2, h3, p { margin: 0; }
+

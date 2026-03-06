@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indra - Videos</title>
+
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages/videos.css" />
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-bar container">
+      <div class="brand">
+        <h2 class="title">Indra Cosimo Bowen-Paoli</h2>
+        <p class="subtitle"><strong>Game programmer</strong></p>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="active"><a href="videos.html">Videos</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page">
+    <header class="page-header">
+      <!-- <h1>Videos</h1>
+      <p>Short clips (self-hosted)</p> -->
+    </header>
+
+    <section class="video-grid">
+      <article class="video-card">
+        <video
+          class="video"
+          controls
+          preload="metadata"
+          playsinline
+          poster="assets/videos/posters/nutscue2.png"
+        >
+          <source src="assets/videos/NutscueCheckpoints.webm" type="video/webm" />
+          <source src="assets/videos/clip1.mp4" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+
+        <h2 class="video-title">Nutscue Checkpoint system</h2>
+        <p class="video-caption">Checkpoints store the player's location at the time of passing, on reset these values are used to respawn the player. This method allowed for smoother retry attempts and improved player experience.</p>
+      </article>
+
+            <article class="video-card">
+        <video
+          class="video"
+          controls
+          preload="metadata"
+          playsinline
+          poster="assets/videos/posters/enginelight_logo.png"
+        >
+          <source src="assets/videos/EngineClip_webm.webm" type="video/webm" />
+          <source src="assets/videos/" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+
+        <h2 class="video-title">Engline Light Car Demo</h2>
+        <p class="video-caption">Car physics were implemented using Chaos Physics. Wheels, and suspension systems were tuned to match a Chevrolet Corvette.</p>
+      </article>
+
+      <!-- add more cards -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-columns">
+
+        <div class="footer-left">
+          <figure class="image is-64x64">
+            <img class="is-rounded" src="assets/images/indra_nice.jpg" alt="Profile Picture">
+          </figure>
+          <div class="about-blurb">
+            <a href="index.html#about" class="footer-blurb-link">
+              <p>
+                Oh hey, what's goin' on? My name is Indra and I live in Stockholm, Sweden.
+                I am a game programmer; however, my passion for games lies in design...
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <h2>Find me on</h2>
+          <div class="footer-links">
+            <a href="mailto:indracosimo@gmail.com" target="_blank" title="Gmail"><i class="bx bxl-gmail" style="font-size: 2rem;"></i></a>
+            <a href="https://www.linkedin.com/in/indra-cosimo-bowen-paoli-a104a71a9/" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin-square" style="font-size: 2rem;"></i></a>
+            <a href="https://github.com/indracosimo" target="_blank" title="GitHub"><i class="bx bxl-github" style="font-size: 2rem;"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
