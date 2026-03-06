@@ -13,8 +13,9 @@
 
 .gallery .column img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   display: block;
+  border: 1px solid var(--border);
 }
 
 /* About section (Home) */
@@ -34,15 +35,23 @@
   width: 100%;
   max-width: 300px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 12px;
   display: block;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-1);
 }
 
 .about-text {
   flex: 1;
   max-width: 600px;
-  line-height: 1.6;
+  line-height: 1.75;
   font-size: 1rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow-1);
 }
 
 /* Breakpoints */

@@ -2,43 +2,29 @@
 * { box-sizing: border-box; }
 
 :root {
-  /* Warm base */
-  --bg: #fbf7f2;        /* warm off-white */
-  --text: #1f2937;      /* dark slate (good contrast on --bg) */
+  /* Pastel base */
+  --bg: #f6f9ff;          /* very light blue-tinted background */
+  --text: #1e2a3a;        /* dark slate-blue for good contrast */
 
-  /* Surfaces */
-  --surface: #ffffff;
-  --surface-2: #fff4e6; /* warm tint */
-  --border: #eadfd3;
+  /* Surfaces / panels */
+  --surface: #cbe0fb;     /* soft blue surface */
+  --surface-2: #fbddec;   /* soft pink surface (accent surface) */
+  --border: #b3d1f8;      /* light blue border */
 
-  /* Accents (green + orange) */
-  --accent: #1b7a5a;    /* deep green */
-  --accent-2: #c2410c;  /* warm orange */
+  /* Accents */
+  --accent: #2e6bb3;      /* stronger, readable blue */
+  --accent-2: #c24a83;    /* stronger pink for highlights */
 
   /* Links */
-  --link: #1b7a5a;
-  --link-hover: #155e45;
+  --link: #2e6bb3;
+  --link-hover: #214e84;
 
-  /* Footer / dark areas */
-  --on-dark: #ffffff;
-  --dark: #1f2a2b;
+  /* Dark areas (navbar/footer) */
+  --dark: #152235;        /* deep navy (fits pastel theme) */
+  --on-dark: #f6f9ff;
 
   /* Shadows */
-  --shadow-1: 0 8px 24px rgba(17, 24, 39, 0.08);
-}
-
-body {
-  background-color: var(--bg);
-  color: var(--text);
-}
-
-/* nice default link styling */
-a {
-  color: var(--link);
-}
-
-a:hover {
-  color: var(--link-hover);
+  --shadow-1: 0 10px 26px rgba(21, 34, 53, 0.14);
 }
 
 html, body {
@@ -49,9 +35,14 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+
+  background-color: var(--bg);
+  color: var(--text);
 }
+
+/* Default link styling (site-wide) */
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
 
 /* Consistent content width */
 .container {
@@ -65,4 +56,3 @@ body {
 
 /* Simple spacing defaults */
 h1, h2, h3, p { margin: 0; }
-
