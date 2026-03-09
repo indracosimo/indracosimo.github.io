@@ -30,6 +30,6 @@
 
 .video-caption {
   margin-top: 0.25rem;
-  color: rgba(30, 42, 58, 0.85); /* softened text, still readable */
+  color: rgba(30, 42, 58, 0.85); 
   font-size: 0.95rem;
 }

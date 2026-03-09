@@ -32,7 +32,7 @@
   <main class="container page">
     <header class="page-header">
       <!-- <h1>Videos</h1>
-      <p>Short clips (self-hosted)</p> -->
+      <p>Short clips</p> -->
     </header>
 
     <section class="video-grid">
@@ -53,7 +53,7 @@
         <p class="video-caption">Checkpoints store the player's location at the time of passing, on reset these values are used to respawn the player. This method allowed for smoother retry attempts and improved player experience.</p>
       </article>
 
-            <article class="video-card">
+      <article class="video-card">
         <video
           class="video"
           controls
@@ -70,7 +70,25 @@
         <p class="video-caption">Car physics were implemented using Chaos Physics. Wheels, and suspension systems were tuned to match a Chevrolet Corvette.</p>
       </article>
 
-      <!-- add more cards -->
+            <article class="video-card">
+        <video
+          class="video"
+          controls
+          preload="metadata"
+          playsinline
+          <!-- poster="assets/videos/posters/enginelight_logo.png" -->
+        >
+          <source src="assets/videos/DumpsterFireEngine.webm" type="video/webm" />
+          <source src="assets/videos/" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+
+        <h2 class="video-title">Hobby Engine Demo</h2>
+        <p class="video-caption">An engine I made using OpenGL as its backend. I did this for project for fun and to challenge myself to create a game engine. It uses AABB (Axis-Aligned Bounding Box) for physics handling.
+          It can support .obj files and has a simple shader system. <br> Link to the GitHub repo: <a href="https://github.com/indracosimo/DumpsterFireRefuelled" target="_blank">https://github.com/indracosimo/DumpsterFireRefuelled</a>
+        </p>
+      </article>
+      
     </section>
   </main>
 
